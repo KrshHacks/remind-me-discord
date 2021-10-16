@@ -9,10 +9,14 @@ export default class Command implements CMD {
   };
 
   async run(client: Client, message: Eris.Message, args: string[]) {
+    message.channel.createMessage('Will Remind Ya! after ' + args[0] + 'minutes')
+    
+    const time: any = args.shift()
+    
     setTimeout(function () {
       message.channel.createMessage(
-        `${message.author} Reminder for ${args[1]}`
+        `<@${message.author.id}> Reminder for ${args.join(" ")}`
       );
-    }, parseFloat(args[0]) * 60 * 1000);
+    }, parseFloat(time) * 60 * 1000);
   }
 }
