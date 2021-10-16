@@ -11,7 +11,3 @@ This project was created with **create-discord-app**!
 You must manually restart the process after changes!
 
 `npm run dev`
-
-# Join Our Discord Server
-
-**[https://discord.gg/2SUybzb](https://discord.gg/2SUybzb)**
